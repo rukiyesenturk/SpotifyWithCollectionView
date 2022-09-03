@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="libraryCell" id="gTV-IL-0wX" customClass="LibraryCell" customModule="SpotifyWithCollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="203" height="99"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTb-Q8-Bli">
+                        <rect key="frame" x="0.0" y="0.0" width="203" height="99"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="karsu" translatesAutoresizingMaskIntoConstraints="NO" id="MVp-3k-ts3">
+                                <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MVp-3k-ts3" secondAttribute="height" multiplier="1:1" id="0Aw-d1-whe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Karsu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dx-YW-CAL">
+                                <rect key="frame" x="107" y="39" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21916430917653174" green="0.21916430917653174" blue="0.21916430917653174" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="MVp-3k-ts3" firstAttribute="top" secondItem="vTb-Q8-Bli" secondAttribute="top" id="29i-gM-iD6"/>
+                            <constraint firstAttribute="bottom" secondItem="MVp-3k-ts3" secondAttribute="bottom" id="DB6-Ti-JLs"/>
+                            <constraint firstItem="MVp-3k-ts3" firstAttribute="leading" secondItem="vTb-Q8-Bli" secondAttribute="leading" id="RMg-d0-Djw"/>
+                            <constraint firstItem="3Dx-YW-CAL" firstAttribute="centerY" secondItem="vTb-Q8-Bli" secondAttribute="centerY" id="RcK-wX-XOE"/>
+                            <constraint firstItem="MVp-3k-ts3" firstAttribute="centerY" secondItem="vTb-Q8-Bli" secondAttribute="centerY" id="mlG-1a-ZwF"/>
+                            <constraint firstItem="3Dx-YW-CAL" firstAttribute="leading" secondItem="MVp-3k-ts3" secondAttribute="trailing" constant="8" symbolic="YES" id="t14-D8-apR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vTb-Q8-Bli" secondAttribute="bottom" id="Q38-3y-67s"/>
+                <constraint firstItem="vTb-Q8-Bli" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xb1-hC-SEU"/>
+                <constraint firstItem="vTb-Q8-Bli" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="brR-aX-eTK"/>
+                <constraint firstAttribute="trailing" secondItem="vTb-Q8-Bli" secondAttribute="trailing" id="wx6-0m-FvC"/>
+            </constraints>
+            <size key="customSize" width="203" height="99"/>
+            <connections>
+                <outlet property="imgLibrary" destination="MVp-3k-ts3" id="hcn-X9-bBR"/>
+                <outlet property="lblLibrary" destination="3Dx-YW-CAL" id="JDH-DG-xSV"/>
+            </connections>
+            <point key="canvasLocation" x="242.75362318840581" y="100.11160714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="karsu" width="213" height="213"/>
+    </resources>
+</document>

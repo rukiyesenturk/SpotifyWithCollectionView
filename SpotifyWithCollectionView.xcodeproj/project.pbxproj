@@ -13,6 +13,14 @@
 		FADE6B6428BBFC5800E758B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADE6B6228BBFC5800E758B3 /* Main.storyboard */; };
 		FADE6B6628BBFC5800E758B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE6B6528BBFC5800E758B3 /* Assets.xcassets */; };
 		FADE6B6928BBFC5800E758B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADE6B6728BBFC5800E758B3 /* LaunchScreen.storyboard */; };
+		FADE6B7228BC018200E758B3 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE6B7028BC018200E758B3 /* LibraryCell.swift */; };
+		FADE6B7328BC018200E758B3 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADE6B7128BC018200E758B3 /* LibraryCell.xib */; };
+		FADE6B7828BC01E200E758B3 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE6B7628BC01E200E758B3 /* AlbumCell.swift */; };
+		FADE6B7928BC01E200E758B3 /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADE6B7728BC01E200E758B3 /* AlbumCell.xib */; };
+		FADE6B7B28BC0E7C00E758B3 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE6B7A28BC0E7C00E758B3 /* Library.swift */; };
+		FADE6B7D28BC0E8C00E758B3 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE6B7C28BC0E8C00E758B3 /* Album.swift */; };
+		FADE6B8028BC1EB500E758B3 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE6B7E28BC1EB500E758B3 /* SectionHeader.swift */; };
+		FADE6B8128BC1EB500E758B3 /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADE6B7F28BC1EB500E758B3 /* SectionHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		FADE6B6528BBFC5800E758B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADE6B6828BBFC5800E758B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADE6B6A28BBFC5800E758B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADE6B7028BC018200E758B3 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
+		FADE6B7128BC018200E758B3 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
+		FADE6B7628BC01E200E758B3 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		FADE6B7728BC01E200E758B3 /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
+		FADE6B7A28BC0E7C00E758B3 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		FADE6B7C28BC0E8C00E758B3 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		FADE6B7E28BC1EB500E758B3 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		FADE6B7F28BC1EB500E758B3 /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA41A0BD28BC8437008AB36A /* SectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				FADE6B7F28BC1EB500E758B3 /* SectionHeader.xib */,
+				FADE6B7E28BC1EB500E758B3 /* SectionHeader.swift */,
+			);
+			path = SectionHeader;
+			sourceTree = "<group>";
+		};
 		FADE6B5028BBFC5800E758B3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +81,13 @@
 		FADE6B5B28BBFC5800E758B3 /* SpotifyWithCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				FA41A0BD28BC8437008AB36A /* SectionHeader */,
+				FADE6B7428BC018E00E758B3 /* LibraryCollectionViewCell */,
+				FADE6B7528BC01AD00E758B3 /* AlbumCollectionViewCell */,
 				FADE6B5C28BBFC5800E758B3 /* AppDelegate.swift */,
 				FADE6B5E28BBFC5800E758B3 /* SceneDelegate.swift */,
+				FADE6B7A28BC0E7C00E758B3 /* Library.swift */,
+				FADE6B7C28BC0E8C00E758B3 /* Album.swift */,
 				FADE6B6028BBFC5800E758B3 /* ViewController.swift */,
 				FADE6B6228BBFC5800E758B3 /* Main.storyboard */,
 				FADE6B6528BBFC5800E758B3 /* Assets.xcassets */,
@@ -65,6 +95,24 @@
 				FADE6B6A28BBFC5800E758B3 /* Info.plist */,
 			);
 			path = SpotifyWithCollectionView;
+			sourceTree = "<group>";
+		};
+		FADE6B7428BC018E00E758B3 /* LibraryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FADE6B7128BC018200E758B3 /* LibraryCell.xib */,
+				FADE6B7028BC018200E758B3 /* LibraryCell.swift */,
+			);
+			path = LibraryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FADE6B7528BC01AD00E758B3 /* AlbumCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FADE6B7628BC01E200E758B3 /* AlbumCell.swift */,
+				FADE6B7728BC01E200E758B3 /* AlbumCell.xib */,
+			);
+			path = AlbumCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADE6B6928BBFC5800E758B3 /* LaunchScreen.storyboard in Resources */,
+				FADE6B7328BC018200E758B3 /* LibraryCell.xib in Resources */,
+				FADE6B8128BC1EB500E758B3 /* SectionHeader.xib in Resources */,
+				FADE6B7928BC01E200E758B3 /* AlbumCell.xib in Resources */,
 				FADE6B6628BBFC5800E758B3 /* Assets.xcassets in Resources */,
 				FADE6B6428BBFC5800E758B3 /* Main.storyboard in Resources */,
 			);
@@ -139,8 +190,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADE6B6128BBFC5800E758B3 /* ViewController.swift in Sources */,
+				FADE6B7228BC018200E758B3 /* LibraryCell.swift in Sources */,
+				FADE6B7828BC01E200E758B3 /* AlbumCell.swift in Sources */,
 				FADE6B5D28BBFC5800E758B3 /* AppDelegate.swift in Sources */,
+				FADE6B8028BC1EB500E758B3 /* SectionHeader.swift in Sources */,
 				FADE6B5F28BBFC5800E758B3 /* SceneDelegate.swift in Sources */,
+				FADE6B7D28BC0E8C00E758B3 /* Album.swift in Sources */,
+				FADE6B7B28BC0E7C00E758B3 /* Library.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
